@@ -1,7 +1,11 @@
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import Card from "./components/Card";
+
 
 export default function Home() {
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -13,13 +17,8 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
+       
+      <Card title="Eshaq" subtitle="Haidari" link="www.google.com"/>
         <div className={styles.ctas}>
           <a
             className={styles.primary}
